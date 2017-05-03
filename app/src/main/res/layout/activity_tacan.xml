@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context="com.example.kyu.caparuf.VORActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/VorCategoryNamesStyle"
+            android:textSize="19sp"
+            android:text="Tactical air navigation system"/>
+        <TextView
+            style="@style/VorCategoryTextStyle"
+            android:text="System TACAN jest wojskowym systemem nawigacji lotniczej bliskiego zasięgu. Zapewnia ogólnokierunkowy pomiar azymutu i odległości oraz częstotliwość do pomiarów odległości  - jak system DME. \n "/>
+        <TextView
+            style="@style/VorCategoryNamesStyle"
+            android:text="urzadzenia pokładowe"
+            android:background="@color/category_tacan"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            style="@style/VorCategoryTextStyle"
+            android:text="Pokładowe urządzenia zawierają urządzenie zapytujące układu DME, do którego są dodane układy namierzania systemu TACAN. Każde urządzenie tego systemu może być wyposażone w dodatkowy układ dwukierunkowej transmisji danych, umożliwiający przekazywanie dodatkowo danych o wysokości, prędkości, kącie kursowym radiolatarnii (KKR) oraz informacji typu &quot;kontynuuj&quot;, &quot;przerwij&quot; itp. \n\nZadaniem urządzenia pokładowego systemu TACAN jest nadanie impulsów zapytujących, a następnie odbiór sygnałów retransmitowanych przez radiolatarnię, na podstawie której określane są azymut i odległość. \n" />
+        <TextView
+            style="@style/VorCategoryNamesStyle"
+            android:text="działanie"
+            android:background="@color/category_tacan"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            style="@style/VorCategoryTextStyle"
+            android:text="Jest to system impulsowo-fazowy. Odległość od radiolatarni jest określana metodą impulsową przez pomiar czasu upływającego od momentu wysłania impulsów pytających, do momentu otrzymania odpowiedzi od radiolatarni naziemnej. Azymut zaś mierzony jest metodą fazową. Mierzy go przesunięcie fazowe między punktem na obwiedni a impulsami odniesienia. \n\nW wyniku obracania się anteny radiolatarni o charaktrystyce kierunkowej, wiruje pole elektromagnetyczne promieniowane przez ta radiolatarnie, powodując modulację amplitudową sygnału. Faza obwiedni tego sygnału zależy od kierunku jego przyjścia.\n" />
+  </LinearLayout>
+</ScrollView>

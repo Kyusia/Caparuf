@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Caparuf</string>
+    <string name="category_vor">VOR</string>
+    <string name="category_tacan">Tacan</string>
+    <string name="category_ndb">NDB</string>
+    <string name="category_kkr">DME vs Tacan</string>
+    <string-array name="definitions">
+        <item>System lądowania wg wskazań przyrządów</item>
+        <item>Kąt między Ox SP a kierunkiem do NDB</item>
+        <item>Pokładowy automatyczny radiokompas</item>
+        <item>Radiolatarnia bezkierunkowa</item>
+    </string-array>
+</resources>

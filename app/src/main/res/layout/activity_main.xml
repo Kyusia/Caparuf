@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context="com.example.kyu.caparuf.MainActivity">
+
+    <TextView
+        android:id="@+id/vor"
+        style="@style/CategoryStyle"
+        android:layout_weight="1"
+        android:background="@color/category_vor"
+        android:text="@string/category_vor"/>
+
+    <TextView
+        android:id="@+id/ndb"
+        style="@style/CategoryStyle"
+        android:background="@color/category_ndb"
+        android:layout_weight="1"
+        android:text="@string/category_ndb"/>
+
+    <TextView
+        android:id="@+id/tacan"
+        style="@style/CategoryStyle"
+        android:layout_weight="1"
+        android:background="@color/category_tacan"
+        android:text="@string/category_tacan"/>
+
+    <TextView
+    android:id="@+id/kkr"
+    style="@style/CategoryStyle"
+    android:layout_weight="1"
+    android:background="@color/category_kkr"
+    android:text="@string/category_kkr"/>
+
+</LinearLayout>

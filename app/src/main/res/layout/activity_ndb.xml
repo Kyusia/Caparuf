@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context="com.example.kyu.caparuf.VORActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            style="@style/VorCategoryNamesStyle"
+            android:textSize="20sp"
+            android:text="Non-Directional Beacon"/>
+        <TextView
+            style="@style/VorCategoryTextStyle"
+            android:text="System lądowania na dwie radiolatarnie NDB to forma systemu lądowania IFR z wykorzystaniem wskazań namiarów własnych za pomocą dwóch pokładowych automatycznych radiokompasów ADF, wskazujących namiary na dwie naziemne radiolatarnie bezkierunkowe NDB. Ten system lądowania był w powszechnym stosowaniu w latach 40. i 50. XX wieku. W miarę wzrostu ruchu lotniczego, a zwłaszcza prędkości przelotowych i prędkości podejścia stał się niewystarczający. Jego znaczenie znacznie zmalało po wprowadzeniu dokładniejszych systemów lądowania (VOR/DME, ILS) i obecnie jego rola jest marginalna.   \n "/>
+        <TextView
+            style="@style/VorCategoryNamesStyle"
+            android:background="@color/category_ndb"
+            android:textColor="#FFFFFF"
+            android:text="KKR"/>
+        <TextView
+            style="@style/VorCategoryTextStyle"
+            android:text="Kąt kursowy radiolatarni to kąt zawarty między osią podłużną samolotu a kierunkiem do radiolatarni NDB.\n" />
+        <TextView
+            style="@style/VorCategoryNamesStyle"
+            android:textColor="#FFFFFF"
+            android:background="@color/category_ndb"
+            android:text="wady i zalety"/>
+        <TextView
+            style="@style/VorCategoryTextStyle"
+            android:text=" Zaletą tego systemu był niski koszt wyposażenia lotniska i łatwość jego kalibracji. Wady systemu są następujące:\n \t \u2022 duże obciążenie załogi podczas lądowania, szczególnie podczas wietrznej pogody, uskoków wiatru, dużej prędkości podejścia samolotu\n \t \u2022 konieczność dużej precyzji pilotowania (wysokości przelotu nad radiolatarniami, prędkości podejścia, prędkości zniżania)\n \t \u2022 konieczność wyrobienia u pilotów orientacji przestrzennej położenia samolotu na podstawie różnic wskazań radiokompasów\n \t \u2022 mała precyzja w stosunku do nowszych form lądowania\n \t \u2022 ostrzejsze minima meteorologiczne (większa wysokość decyzji)."/>
+        <Button
+            android:id="@+id/quizNdb"
+            style="@style/VorCategoryNamesStyle"
+            android:background="@color/category_ndb"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="Przejdz do quizu"
+            />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kyu.caparuf">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VORActivity"
+            android:label="@string/category_vor"
+            android:theme="@style/VORTheme" />
+        <activity
+            android:name=".NDBActivity"
+            android:label="@string/category_ndb"
+            android:theme="@style/NDBTheme" />
+        <activity
+            android:name=".KKRActivity"
+            android:label="@string/category_kkr"
+            android:theme="@style/KKRTheme" />
+        <activity
+            android:name=".TacanActivity"
+            android:label="@string/category_tacan"
+            android:theme="@style/TacanTheme" />
+        <activity android:name=".vorQuizzActivity" />
+        <activity android:name=".tacanQuizzActivity" />
+        <activity android:name=".ndbQuizzActivity"></activity>
+    </application>
+
+</manifest>

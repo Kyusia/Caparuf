@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context="com.example.kyu.caparuf.VORActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/VorCategoryNamesStyle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Nazwa"/>
+
+            <TextView
+                style="@style/VorCategoryNamesStyle"
+                android:layout_width="0dp"
+                android:text="Wartosc"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/VorCategoryNamesStyle"
+                android:layout_weight="1"
+                android:text="system" />
+
+            <TextView
+                style="@style/VorCategoryNamesStyle"
+                android:layout_weight="1"
+                android:background="@color/category_dme"
+
+                android:text="dme"/>
+
+            <TextView
+                style="@style/VorCategoryNamesStyle"
+                android:layout_width="match_parent"
+                android:background="@color/category_tacan"
+                android:layout_weight="1"
+                android:text="tacan"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:text="Zasięg" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:text="zależny od wysokości"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3">
+
+        <TextView
+            style="@style/TableTextStyle"
+            android:layout_weight="1"
+            android:text="Błąd okr. azymutów" />
+
+        <TextView
+            style="@style/TableTextStyle"
+            android:background="@color/category_dme"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="-" />
+
+        <TextView
+            style="@style/TableTextStyle"
+            android:layout_weight="1"
+            android:background="@color/category_tacan"
+            android:text="0,2\u00B0 ... 0,6\u00B0" />
+
+    </LinearLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:text="Błąd okr. odległości" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:background="@color/category_dme"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:background="@color/category_tacan"
+                android:layout_weight="1"
+                android:text="185" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:text="Błąd okr. pozycji" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@color/category_dme"
+                android:text="DME: 185 DME\u002FP: 18"/>
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/category_tacan"
+                android:text="-" />
+
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:text="Zakr. częst. pracy" />
+
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:text="960÷1215 MHz" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:text="Kanały robocze" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:background="@color/category_dme"
+                android:layout_weight="1"
+                android:text="126" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:background="@color/category_tacan"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="125" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:text="Odst  między kanałami" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="1 MHz" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:text="Szerokość impulsu" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:background="@color/category_dme"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/category_tacan"
+                android:text="3,5 \u00B5m " />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:text="Długość impulsu" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/TableTextStyle"
+                android:background="@color/category_dme"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="3,5 \u00B5m " />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/category_tacan"
+                android:text="-" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:textSize="10.5sp"
+                android:text="Odst między impulsami" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:background="@color/category_dme"
+                android:layout_weight="1"
+                android:text="12 -42 \u00B5s" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:background="@color/category_tacan"
+                android:layout_weight="1"
+                android:text="12 - 36 \u00B5s" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:text="Przepustowość (azym.)" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:background="@color/category_dme"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/category_tacan"
+                android:text="nieograniczona" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:text="Przepustowość (odl)" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:background="@color/category_dme"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/category_tacan"
+                android:text="100 SP" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:text="Moc nadajnika SP w impulsie" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:background="@color/category_dme"
+                android:gravity="center"
+                android:text="-" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/category_tacan"
+                android:text="1 kW" />
+
+        </LinearLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:layout_weight="1"
+                android:text="Moc nadajnika radiolatarni" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:background="@color/category_dme"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <TextView
+                style="@style/TableTextStyle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@color/category_tacan"
+                android:text="6 kW" />
+
+        </TableRow>
+        <TextView
+            style="@style/TableTextStyle"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="\n" />
+    </LinearLayout>
+</ScrollView>

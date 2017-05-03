@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context="com.example.kyu.caparuf.VORActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<TextView
+    style="@style/VorCategoryNamesStyle"
+    android:textSize="20sp"
+    android:text="VHF Omni-directional Range"/>
+    <TextView
+        style="@style/VorCategoryTextStyle"
+        android:text="System VOR to namiarowy system bliskiego zasięgu, przeznaczony do prowadzenia samolotu po trasach przelotowych wg. radiolatarni VOR. Umożliwia określenie na pokładzie samolotu radiala (namiar wytworzony przez radiolatarnię VOR), na którym znajduje się samolot. \n "/>
+    <TextView
+        style="@style/VorCategoryNamesStyle"
+        android:background="@color/category_vor"
+        android:text="budowa"/>
+    <TextView
+        style="@style/VorCategoryTextStyle"
+        android:text="Sklada się z sieci radiolatarń naziemnych oraz odbiorników zainstalowanych na pokładach samolotów. Radiolatarnie instalowane są w pobliżu lotnisk i na skrzyżowaniach lub załamaniach korytarzy powietrznych. \n"/>
+    <TextView
+        style="@style/VorCategoryNamesStyle"
+        android:background="@color/category_vor"
+        android:text="Działanie"/>
+    <TextView
+        style="@style/VorCategoryTextStyle"
+        android:text="Zasada działania systemu oparta jest na fazowe metodzie określania azymutu. Antena radiolatarni azymutalnej wytwarza charakterystykę kardioidalną wirującą z prędkością 30 obr/s. Powoduje to modulację amplitudową sygnału z częstotliwością 30 Hz. W punkcie o dowolnym azymucie fala odbieranego przez urządzenie pokładowe sygnału jest opóźniona w stosunku do synału odbieranego na kierunku północnym. Mierzonym parametrem fali elektromagnetycznej jest różnica faz. Sygnał ten jest nazywany systemem fazy zmiennej, ponieważ jego faza jest związana z azymutem samolotu.\n"/>
+    <TextView
+        style="@style/VorCategoryNamesStyle"
+        android:background="@color/category_vor"
+        android:text="Informacje prezentowane w urzadzeniach pokładowych"/>
+    <TextView
+        style="@style/VorCategoryTextStyle"
+        android:text="\t \u2022 namiar magnetyczny statku powietrznego od radiolatarni\n \t \u2022 osiągnięcie żądanego namiaru do lub od radiolatarni\n \t \u2022 minięcie radiolatarni\n \t \u2022 identyfikator radiolatarni (3 znaki zakodowane alfabetem Morse'a)\n"/>
+    <TextView
+        style="@style/VorCategoryNamesStyle"
+        android:text="uwaga"/>
+    <TextView
+        style="@style/VorCategoryTextStyle"
+        android:text="Odbiornik VOR reaguje jedynie na różnicę faz pomiędzy sygnałem odniesienia i synałem fazy zmiennej, przez co uzyskany sygnał nie pozwala na wskazanie czy lecący po radialu samolot leci do czy od radiolatarni. Na określenie tego pozwalają dodatkowe urządzenia tj. busola giroindukcyjna. \n"/>
+    <TextView
+        style="@style/VorCategoryNamesStyle"
+        android:background="@color/category_vor"
+        android:text="czestotliwosc pracy"/>
+    <TextView
+        style="@style/VorCategoryTextStyle"
+        android:text="Częstotliwości pracy: 108–117,9 MHz (w zakresie 108–112 co 200 kHz, pozostałe kanały wykorzystywane są przez system ILS)\n"/>
+    <TextView
+        style="@style/VorCategoryNamesStyle"
+        android:background="@color/category_vor"
+        android:text="wady i zalety"/>
+    <TextView
+        style="@style/VorCategoryTextStyle"
+        android:text="Jego podstawową zaletą w stosunku do systemu pracującego na falach długich i średnich jest większa dokładność. Podstawową wadą tego systemu jest duża podatność na zakłócenia sygnału ze względu na przeszkody terenowe. Odpowiedzią na to jest radiolatarnia D-VOR (VOR Dopplerowski) o zmodyfikowanej zasadzie pracy."/>
+    <Button
+        android:id="@+id/quizVor"
+        style="@style/VorCategoryNamesStyle"
+        android:background="@color/category_vor"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="Przejdz do quizu"
+        />
+    <TextView
+        style="@style/VorCategoryNamesStyle"
+        android:text=" "/>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,318 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context="com.example.kyu.caparuf.VORActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/VorCategoryNamesStyle"
+            android:text="Vor quiz"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/VorCategoryTextStyle"
+            android:text="System VOR to namiarowy system bliskiego zasięgu, przeznaczony do prowadzenia samolotu po trasach przelotowych wg. radiolatarni VOR. Umożliwia określenie na pokładzie samolotu radiala (namiar wytworzony przez radiolatarnię VOR), na którym znajduje się samolot. \n " />
+
+        <TextView
+            style="@style/VorCategoryNamesStyle"
+            android:text="Napisz, czego to definicja?" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Question11"
+                    style="@style/VorCategoryTextStyle"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="KKR" />
+
+                <EditText
+                    android:id="@+id/Answer11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="R..." />
+                <Spinner
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/VorCategoryTextStyle"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="ADF" />
+
+                <EditText
+                    android:id="@+id/Answer12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="C...K..." />
+                <Spinner
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/VorCategoryTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="NDB" />
+
+                <EditText
+                    android:id="@+id/Answer13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="A...M..." />
+                <Spinner
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/VorCategoryTextStyle"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="IFR" />
+
+                <EditText
+                    android:id="@+id/Answer14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="R...F..." />
+                <Spinner
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"></Spinner>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            style="@style/VorCategoryNamesStyle"
+            android:text="Co wyparło System NDB?"
+            android:textSize="18sp" />
+
+        <RadioButton
+
+            style="@style/VorCategoryTextStyle"
+            android:id="@+id/Answer23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VOR/DME"/>
+
+        <RadioButton
+
+            style="@style/VorCategoryTextStyle"
+            android:id="@+id/Answer22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VLS"/>
+
+        <RadioButton
+
+            style="@style/VorCategoryTextStyle"
+            android:id="@+id/Answer21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GPS"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView17"
+                style="@style/VorCategoryNamesStyle"
+                android:layout_width="match_parent"
+                android:text="Czego wymagał od pilota ten system" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/VorCategoryTextStyle"
+                    android:id="@+id/Text31"
+                    android:layout_width="0dp"
+                    android:text="Dużej precyzji pilotowania"
+                    android:layout_weight="4"/>
+
+                <CheckBox
+                    android:id="@+id/Answer31"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/VorCategoryTextStyle"
+                    android:layout_weight="4"
+                    android:id="@+id/Text32"
+                    android:layout_width="0dp"
+                    android:text="wyrobienia u pilotów orientacji przestrzennej położenia samolotu na podstawie różnic wskazań radiokompasów" />
+
+                <CheckBox
+                    android:id="@+id/Answer32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/VorCategoryTextStyle"
+                    android:id="@+id/Text33"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:text="wytrzymywania dużych obciążeń podczas lądowania" />
+
+                <CheckBox
+                    android:id="@+id/Answer33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/VorCategoryTextStyle"
+                    android:layout_weight="4"
+                    android:id="@+id/Text34"
+                    android:layout_width="0dp"
+                    android:text="utrzymywania wzroku na otaczających go radiolatarniach" />
+
+                <CheckBox
+                    android:id="@+id/Answer34"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/VorCategoryTextStyle"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:id="@+id/Text35"
+                    android:text="Odczytywania z urządzeń pokładowych kierunku samolotu pod kątem KKR względem radiolatarni" />
+
+                <CheckBox
+                    android:id="@+id/Answer35"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/VorCategoryNamesStyle"
+            android:text="Ile radiolatarń potrzeba, żeby wylądować?"
+            android:textSize="18sp" />
+
+        <RadioButton
+
+            style="@style/VorCategoryTextStyle"
+            android:id="@+id/Answer41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="69"/>
+
+
+
+        <RadioButton
+            style="@style/VorCategoryTextStyle"
+            android:id="@+id/Answer42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="96" />
+
+        <RadioButton
+
+            style="@style/VorCategoryTextStyle"
+            android:id="@+id/Answer43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"/>
+        <RadioButton
+
+            style="@style/VorCategoryTextStyle"
+            android:id="@+id/Answer44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Im więcej, tym lepiej"  />
+        <Button
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="sprawdz"/>
+        <TextView
+            android:id="@+id/EndStatement"
+            style="@style/VorCategoryTextStyle"
+            />
+
+    </LinearLayout>
+</ScrollView>
